@@ -1,0 +1,18 @@
+image: reisub0/elm
+
+cache:
+  paths:
+  - node_modules/
+  - elm-stuff/
+
+pages:
+  stage: deploy
+  script:
+  - npm install
+  - elm package install --yes
+  - ./node_modules/brunch/bin/brunch build --production
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
