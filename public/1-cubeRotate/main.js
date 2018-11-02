@@ -50,7 +50,7 @@
 
     // twgl.drawBufferInfo(gl, bufferInfo);
   };
-  image.src = "/static/noodles.jpg";
+  image.src = "../static/noodles.jpg";
 
   const uniforms = {
     u_matrix: [],
