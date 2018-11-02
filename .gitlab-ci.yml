@@ -1,9 +1,9 @@
 # image: reisub0/elm
 
-cache:
-  paths:
-    - node_modules/
-    - elm-stuff/
+# cache:
+#   paths:
+#     - node_modules/
+#     - elm-stuff/
 
 pages:
   stage: deploy
