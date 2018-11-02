@@ -59,6 +59,7 @@
 
   function render(time) {
     time *= 0.001;
+    twgl.resizeCanvasToDisplaySize(gl.canvas);
     const fov = deg2rad(60);
     const aspect = gl.canvas.clientWidth / gl.canvas.clientHeight;
     mat4.perspective(uniforms.u_matrix, fov, aspect, 1, 2000);
