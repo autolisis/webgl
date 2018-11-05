@@ -35,12 +35,17 @@ function isPowerOf2(value) {
 }
 
 function GLInit(gl) {
-  twgl.resizeCanvasToDisplaySize(gl.canvas);
   gl.viewport(0, 0, gl.canvas.width, gl.canvas.height);
+  twgl.resizeCanvasToDisplaySize(gl.canvas);
+  // twgl.
 
   gl.enable(gl.CULL_FACE);
   gl.enable(gl.DEPTH_TEST);
 
   gl.clearColor(0, 0, 0, 0);
   gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
+}
+
+function clone(obj) {
+  return JSON.parse(JSON.stringify(obj));
 }
